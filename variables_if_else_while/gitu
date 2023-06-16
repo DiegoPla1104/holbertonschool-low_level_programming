@@ -13,5 +13,6 @@ read mensaje
 # Realizar el commit con el mensaje proporcionado
 git commit -m "$mensaje"
 
+sleep 5
 # Hacer push al repositorio remoto
 git push
