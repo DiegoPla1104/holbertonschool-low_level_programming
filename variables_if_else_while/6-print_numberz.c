@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char ipa;
+	int ipa;
 
 	for (ipa = '0' ; ipa <= '9' ; ipa++)
 	{
