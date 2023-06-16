@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
  * main - Alphabet
  *
@@ -13,8 +11,15 @@ int main(void)
 
 	for (ipa = 'a' ; ipa <= 'z' ; ipa++)
 	{
-	putchar(ipa);
+		putchar(ipa);
 	}
-	putchar("\n")
+	putchar('\n');
+	/*ipa = 'a';
+	while (ipa <= 'z')
+	{
+		putchar(ipa);
+		ipa ++;
+	}
+	putchar('\n');*/
 	return (0);
 }
