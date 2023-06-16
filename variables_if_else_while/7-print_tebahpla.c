@@ -9,7 +9,7 @@ int main(void)
 {
 	char ipa;
 
-	for (ipa = 'z' ; ipa <= 'a' ; ipa--)
+	for (ipa = 'z' ; ipa >= 'a' ; ipa--)
 	{
 		putchar(ipa);
 	}
