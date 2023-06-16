@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Hacer todos los archivos ejecutables
+chmod u+x *
+
+# Agregar todos los archivos al repositorio de Git
+git add .
+
+# Solicitar el mensaje de commit al usuario
+echo "Por favor, ingresa el mensaje de commit:"
+read mensaje
+
+# Realizar el commit con el mensaje proporcionado
+git commit -m "$mensaje"
+
+# Hacer push al repositorio remoto
+git push
