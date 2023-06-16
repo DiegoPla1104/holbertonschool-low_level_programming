@@ -8,10 +8,15 @@
 int main(void)
 {
 	char ipa;
+	char opa;
 
-	if (ipa = 'a' ; ipa <= 'z' ; ipa++)
+	while (ipa = 'a' ; ipa <= 'z' ; ipa++)
 	{
 		putchar(ipa);
+	}
+	if (opa = 'A' ; opa <= 'Z' ; opa++)
+	{
+		putchar(opa);
 	}
 	putchar('\n');
 	return (0);
