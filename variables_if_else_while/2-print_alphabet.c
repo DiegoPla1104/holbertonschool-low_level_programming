@@ -13,13 +13,6 @@ int main(void)
 	{
 		putchar(ipa);
 	}
-	putchar('\n');
-	/*ipa = 'a';
-	while (ipa <= 'z')
-	{
-		putchar(ipa);
-		ipa ++;
-	}
-	putchar('\n');*/
+	putchar('\n')
 	return (0);
 }
