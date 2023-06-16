@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *printeado - Prints the alphabet
+ *print_alphabet - Prints the alphabet
  *
  *Return: On Success (0)
  */
