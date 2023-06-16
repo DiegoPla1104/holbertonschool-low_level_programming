@@ -7,13 +7,16 @@
  */
 int main(void)
 {
-	char ipa;
+	int ipa;
 
 	for (ipa = '0' ; ipa <= '9' ; ipa++)
 	{
 		putchar(ipa);
-		putchar(',');
-		putchar(' ');
+		if (ipa != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
