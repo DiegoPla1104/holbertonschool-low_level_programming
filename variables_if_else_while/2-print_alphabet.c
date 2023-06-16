@@ -15,5 +15,6 @@ int main(void)
 	{
 	putchar(ipa);
 	}
+	putchar("\n")
 	return (0);
 }
