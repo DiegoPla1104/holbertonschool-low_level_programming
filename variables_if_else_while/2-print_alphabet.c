@@ -11,7 +11,7 @@ int main(void)
 {
 	char ipa;
 
-	for (ipa = 'a' ; ch <= 'z' ; ch++)
+	for (ipa = 'a' ; ipa <= 'z' ; ipa++)
 	{
 	putchar(ipa);
 	}
