@@ -10,11 +10,11 @@ int main(void)
 	char ipa;
 	char opa;
 
-	while (ipa = 'a' ; ipa <= 'z' ; ipa++)
+	for (ipa = 'a' ; ipa <= 'z' ; ipa++)
 	{
 		putchar(ipa);
 	}
-	if (opa = 'A' ; opa <= 'Z' ; opa++)
+	for (opa = 'A' ; opa <= 'Z' ; opa++)
 	{
 		putchar(opa);
 	}
