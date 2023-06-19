@@ -7,8 +7,14 @@
  */
 int print_last_digit(int r)
 {
-	int n = (r % 10);
+	int aepa = (r % 10);
+	
+	if (aepa < 0)
 	{
-		for (n < 0; n * -1; n==);
-	return (0);
+		aepa = aepa * -1;
+	}
+
+	_putchar(aepa + '0');
+
+	return (aepa);
 }
