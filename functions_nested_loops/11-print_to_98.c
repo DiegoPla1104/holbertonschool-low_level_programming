@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  *print_to_98 - Prints the alphabet ten times
@@ -7,30 +8,25 @@
  */
 void print_to_98(int n)
 {
-	for (; n <= 98; n++)
+	int uupa;
+
+	if (n < 98)
 	{
-		if (n < 98)
+		for (uupa = n; uupa <= 98; uupa++)
+		if (n == 98)
 		{
-			_putchar(n);
-			_putchar(',');
-			_putchar(' ');
-		}
-		else
-		{
-			_putchar(n);
+			printf("%d, ", uupa);
 		}
 	}
-	for (; n >= 98; n--)
+	if (n >= 98)
 	{
-		if (n > 98)
+		for (uupa = n; uupa <= 98; uupa++)
 		{
-			_putchar(n);
-			_putchar(',');
-			_putchar(' ');
-		}
-		else
-		{
-			_putchar(n);
+			printf("%d, ", uupa);
+			if (n == 98)
+			{
+				printf("%d\n", uupa);
+			}
 		}
 	}
 }
