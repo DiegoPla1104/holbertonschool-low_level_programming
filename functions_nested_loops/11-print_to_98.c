@@ -13,14 +13,11 @@ void print_to_98(int n)
 	if (n < 98)
 	{
 		for (uupa = n; uupa <= 98; uupa++)
-		if (n == 98)
-		{
-			printf("%d, ", uupa);
-		}
+		printf("%d, ", uupa);
 	}
 	if (n >= 98)
 	{
-		for (uupa = n; uupa <= 98; uupa++)
+		for (uupa = n; uupa >= 98; uupa--)
 		{
 			printf("%d, ", uupa);
 			if (n == 98)
@@ -29,4 +26,5 @@ void print_to_98(int n)
 			}
 		}
 	}
+printf("\n");
 }
