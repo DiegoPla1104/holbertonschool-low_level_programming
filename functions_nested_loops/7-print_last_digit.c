@@ -8,7 +8,7 @@
 int print_last_digit(int r)
 {
 	int aepa = (r % 10);
-	
+
 	if (aepa < 0)
 	{
 		aepa = aepa * -1;
