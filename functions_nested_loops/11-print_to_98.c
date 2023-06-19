@@ -2,42 +2,44 @@
 #include <stdio.h>
 
 /**
- *print_to_98 - Prints the alphabet ten times
- *@n: is a number
- *Return: On Success (0)
- */
+  * print_to_98 - Prints all natural numbers from n to 98
+  * @n: The number to start printing from
+  *
+  * Return: Always 0.
+  */
 void print_to_98(int n)
 {
-	int uupa;
-
 	if (n <= 98)
 	{
-		for (uupa = n; uupa <= 98; uupa++)
+		for (; n <= 98; n++)
 		{
-			if (n < 98)
+			if (n == 98)
 			{
-				printf("%d, ", uupa);
-			}
-			else if (n == 98)
-			{
-				printf("%d\n", uupa);
+				printf("%d", n);
+				printf("\n");
 				break;
+			}
+			else
+			{
+				printf("%d, ", n);
 			}
 		}
 	}
-	else if (n > 98)
+	else
 	{
-		for (uupa = n; uupa >= 98; uupa--)
+		for (; n >= 98; n--)
 		{
-			if (n > 98)
+			if (n == 98)
 			{
-				printf("%d, ", uupa);
-			}
-			else if (n == 98)
-			{
-				printf("%d\n", uupa);
+				printf("%d", n);
+				printf("\n");
 				break;
+			}
+			else
+			{
+				printf("%d, ", n);
 			}
 		}
 	}
 }
+
