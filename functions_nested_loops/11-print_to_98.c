@@ -10,31 +10,32 @@ void print_to_98(int n)
 {
 	int uupa;
 
-	if (n < 98)
+	if (n <= 98)
 	{
 		for (uupa = n; uupa <= 98; uupa++)
 		{
 			if (n < 98)
-
-			printf("%d, ", uupa);
-
+			{
+				printf("%d, ", uupa);
+			}
 			else if (n == 98)
-
-			printf("%d\n", uupa);
+			{
+				printf("%d\n", uupa);
+			}
 		}
 	}
 	else if (n > 98)
 	{
-		for (uupa = n; uupa > 98; uupa--)
+		for (uupa = n; uupa >= 98; uupa--)
 		{
 			if (n > 98)
-
-			printf("%d, ", uupa);
-
+			{
+				printf("%d, ", uupa);
+			}
 			else if (n == 98)
-
-			printf("%d\n", uupa);
-
+			{
+				printf("%d\n", uupa);
+			}
 		}
 	}
 }
