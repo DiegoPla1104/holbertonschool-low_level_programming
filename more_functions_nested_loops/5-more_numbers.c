@@ -10,13 +10,17 @@ void more_numbers(void)
 	char aepa;
 	char aipa;
 
-	for (aepa = '0'; aepa <= '9' ; aepa++)
-	{
-		_putchar(aepa);
-	}
-	for (aipa = '0'; aipa <= '4'; aipa++)
-	{
-		_putchar(aipa + '9' + '1');
-	}
-		_putchar('\n');
+			while (aipa <= 9)
+			{
+				while (aepa <= 14)
+				{
+					if (aepa > 9)
+						_putchar(aepa / 10 + '0');
+					_putchar(aepa % 10 + '0');
+					aepa++;
+				}
+			_putchar('\n');
+			aipa++;
+			aepa = 0;
+			}
 }
