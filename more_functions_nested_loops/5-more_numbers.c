@@ -8,6 +8,7 @@
 void more_numbers(void)
 {
 	char aepa;
+	char aipa;
 	int a;
 
 	for (a = 1; a <= 10; a++)
@@ -15,7 +16,7 @@ void more_numbers(void)
 		for (aepa = '0'; aepa <= '9' ; aepa++)
 		{
 			_putchar(aepa);
-			for (aepa = '0'; aepa <= '4'; aepa++)
+			for (aipa = '0'; aipa <= '4'; aipa++)
 			{
 				_putchar(aepa + 10);
 			}
