@@ -5,16 +5,20 @@
  *
  *Return: On Success (0)
  */
-void print_alphabet_x10(void)
+void more_numbers(void)
 {
 	char aepa;
 	int a;
 
 	for (a = 1; a <= 10; a++)
 	{
-		for (aepa = '0'; aepa <= '14' ; aepa++)
+		for (aepa = '0'; aepa <= '9' ; aepa++)
 		{
 			_putchar(aepa);
+			for (aepa = '0'; aepa <= '4'; aepa++)
+			{
+				_putchar(aepa + 10);
+			}
 		}
 		_putchar('\n');
 	}
