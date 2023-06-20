@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *_islower - Detects which letter is lowercase
+ *_isupper - Detects which letter is lowercase
  *@c: is a variable
  *Return: On Success (0)
  */
-int _islower(int c)
+int _isupper(int c)
 {
 		int aipa = c;
 
