@@ -3,10 +3,16 @@
 /**
  *_puts - Is used as a function that prints the string
  *
- *@str: is a string
- *Return: Always 0 (Success)
+ * @str: is a string
+ *
+ * Return: Always 0 (Success)
  */
 void _puts(char *str)
 {
-	_putchar(str[0]);
+	while (*str != '\0')
+	{
+		_putchar(*str);
+		str++;
+	}
+	_putchar('\n');
 }
