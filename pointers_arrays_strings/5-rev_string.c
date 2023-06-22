@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *print_rev - Prints a string in reverse
+ *rev_string - Prints a string in reverse
  *@s: Is the pointer of example
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int u = 0;
 
