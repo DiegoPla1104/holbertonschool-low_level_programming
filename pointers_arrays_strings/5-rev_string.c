@@ -10,6 +10,10 @@ void rev_string(char *s)
 
 	while (s[u] != '\0')
 	{
+		_putchar(s[u]);
+	}
+	while (s[u] != '\0')
+	{
 		u++;
 	}
 	for (; u >= 0; u--)
