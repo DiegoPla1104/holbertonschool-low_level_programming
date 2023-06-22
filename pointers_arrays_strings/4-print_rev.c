@@ -12,7 +12,8 @@ void print_rev(char *s)
 	{
 		u++;
 	}
-	while ( u >= 0)
+	u--;
+	while (u >= 0)
 	{
 		_putchar(s[u]);
 		u--;
