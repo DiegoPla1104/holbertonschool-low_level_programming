@@ -38,4 +38,3 @@ int _atoi(char *s)
 	unu *= wii;
 	return (unu);
 }
-
