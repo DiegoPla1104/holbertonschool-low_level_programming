@@ -1,21 +1,31 @@
 #include "main.h"
+
 /**
- *cap_string - Changes the first letter of each word to Uppercase
- *
- *@U: Is the example string
- *
- *Return: Always 0 (Success)
+ * cap_string - capitalizes all words in a string
+ * @U: Is the string to be reversed
+ * Return: address of s
  */
 char *cap_string(char *U)
 {
-	int W;
+	int W = 0, O;
+	char a[] = " \t\n,;.!?\"(){}";
 
-	for (W = 0; U[W] != '\0'; W++)
+	while (*(U + W))
 	{
-		if (U[W] = ' ' '	' '\n' ',' ';' '.' '!' '?' '"' '(' ')' '{' '}')
+		if (*(U + W) >= 'a' && *(U + W) <= 'z')
 		{
-			U[W++] -= 32;
+			if (W == 0)
+				*(U + W) -= 'a' - 'A';
+			else
+			{
+				for (O = 0; O <= 12; O++)
+				{
+					if (a[O] == *(U + W - 1))
+						*(U + W) -= 'a' - 'A';
+				}
+			}
 		}
+		W++;
 	}
-return (0);
+	return (U);
 }
