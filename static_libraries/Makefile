@@ -7,4 +7,4 @@ all: ${OBJ}
 		${CC} ${OBJ} -o
 
 clean:
-	${RM} -f ${SRC}
+	${RM} -f ${OBJ}
