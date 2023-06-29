@@ -1,15 +1,14 @@
 #include "main.h"
 /**
- *_strspn - Gets the length of a prefix substring
+ *_strpbrk - Looks for a set of bytes in a string
  *@s: The string to be searched
- *@accept: The prefix to be measured
- *
+ *@accept: The set of bytes to be searched for
  *
  *Return: Always 0 (Success)
+ *
  */
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	unsigned int bytes = 0;
 	int ind;
 
 	while (*s)
@@ -17,14 +16,9 @@ unsigned int _strspn(char *s, char *accept)
 		for (ind = 0; accept[ind]; ind++)
 		{
 			if (*s == accept[ind])
-			{
-				bytes++;
-				break;
-			}
-			else if (accept[ind + 1] == '\0')
-				return (bytes);
+				return (s);
 		}
 		s++;
 	}
-	return (bytes);
+	return ('\0');
 }
