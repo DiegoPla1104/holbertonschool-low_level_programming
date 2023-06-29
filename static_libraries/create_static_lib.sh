@@ -1,2 +1,3 @@
 #!/bin/bash
-make all lib
+make all
+ar rc liball.a *.o
