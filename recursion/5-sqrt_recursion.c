@@ -10,7 +10,7 @@ int comp(int n, int y)
 {
 	if (y * y == n)
 	{
-		return (y);
+		return (0);
 	}
 	else if (y * y > n)
 	{
