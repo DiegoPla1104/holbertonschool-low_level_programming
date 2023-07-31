@@ -22,18 +22,28 @@ int create_file(const char *filename, char *text_content)
 			creat(filename, S_IRUSR & S_IWUSR);
 			if (text_content != NULL)
 			{
-				write(STDIN_FILENO, text_content, strlen(text_content));
+				write(stor, text_content, strlen(text_content));
 			}
 			else
 			{
-				write(STDIN_FILENO, "", 1);
+				write(stor, "", 1);
 			}
 			chmod(filename, 0600);
 			close(stor);
 		}
 		else
 		{
-			return (-1);
+			creat(filename, S_IRUSR & S_IWUSR);
+			if (text_content != NULL)
+			{
+				write(stor, text_content, strlen(text_content));
+			}
+			else
+			{
+				write(stor, "", 1);
+			}
+			chmod(filename, 0600);
+			close(stor);
 		}
 	}
 	return (1);
