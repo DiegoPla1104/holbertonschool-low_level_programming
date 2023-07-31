@@ -19,7 +19,7 @@ int create_file(const char *filename, char *text_content)
 		stor = open(filename, O_RDWR);
 		if (stor == -1)
 		{
-			creat(filename, S_IRUSR & S_IWUSR);
+			creat(filename, S_IRUSR | S_IWUSR);
 			if (text_content != NULL)
 			{
 				write(stor, text_content, strlen(text_content));
@@ -33,7 +33,6 @@ int create_file(const char *filename, char *text_content)
 		}
 		else
 		{
-			creat(filename, S_IRUSR & S_IWUSR);
 			if (text_content != NULL)
 			{
 				write(stor, text_content, strlen(text_content));
