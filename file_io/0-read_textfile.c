@@ -25,13 +25,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		else
 		{
 			stor1 = read(stor, buffer, letters);
-		}
-		if (stor == -1)
-		{
-			return (0);
-		}
-		else
-		{
 			write(1, buffer, stor1);
 			close(stor);
 		}
