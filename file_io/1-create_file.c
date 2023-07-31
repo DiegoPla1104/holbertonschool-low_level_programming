@@ -16,10 +16,9 @@ int create_file(const char *filename, char *text_content)
 	}
 	else
 	{
-		stor = open(filename, O_RDONLY | O_WRONLY);
-		if (stor == -1)
+		stor = open(filename, O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+		if (stor != -1)
 		{
-			creat(filename, S_IRUSR | S_IWUSR);
 			if (text_content != NULL)
 			{
 				write(stor, text_content, strlen(text_content));
@@ -28,12 +27,10 @@ int create_file(const char *filename, char *text_content)
 			{
 				write(stor, "", 1);
 			}
-			chmod(filename, 0600);
 			close(stor);
 		}
 		else
 		{
-			creat(filename, S_IRUSR | S_IWUSR);
 			if (text_content != NULL)
 			{
 				write(stor, text_content, strlen(text_content));
@@ -42,7 +39,6 @@ int create_file(const char *filename, char *text_content)
 			{
 				write(stor, "", 1);
 			}
-			chmod(filename, 0600);
 			close(stor);
 		}
 	}
