@@ -1,5 +1,8 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 #include <limits.h>
 #include <stddef.h>
 #include <unistd.h>
