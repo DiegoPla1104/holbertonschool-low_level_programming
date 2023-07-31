@@ -1,5 +1,6 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
+#include <limits.h>
 #include <stddef.h>
 #include <unistd.h>
 #include <fcntl.h>
