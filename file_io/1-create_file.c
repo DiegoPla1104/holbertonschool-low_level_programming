@@ -16,7 +16,7 @@ int create_file(const char *filename, char *text_content)
 	}
 	else
 	{
-		stor = open(filename, O_RDONLY, O_WRONLY);
+		stor = open(filename, O_RDONLY | O_WRONLY);
 		if (stor == -1)
 		{
 			creat(filename, S_IRUSR | S_IWUSR);
