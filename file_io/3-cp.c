@@ -1,13 +1,13 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- *cp - Copies the content of one file to another
+ *main - Copies the content of one file to another
  *@argc: Number of arguments
  *@argv: Pointer to the arguments
  *
- *Return: 0 o -1
+ *Return: 0 or -1
  */
-int cp(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	char buf[1024];
 	int file_f, file_t;
@@ -26,7 +26,7 @@ int cp(int argc, char *argv[])
 	if (file_t < 0)
 		file_t = open(argv[2], O_TRUNC | O_WRONLY);
 	if (file_t == -1)
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	while (l)
 	{
 		l = read(file_f, buf, 1024);
@@ -35,11 +35,12 @@ int cp(int argc, char *argv[])
 			exit(98); }
 		e = write(file_t, buf, l);
 		if (e == -1 || e != l)
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+			{dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]),
+				exit(99); }
 	}
 	if (close(file_f) == -1)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_f), exit(100);
+	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_f), exit(100);
 	if (close(file_t) == -1)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_t), exit(100);
+	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_t), exit(100);
 	return (0);
 }
