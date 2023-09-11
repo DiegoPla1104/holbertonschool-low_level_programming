@@ -13,8 +13,10 @@ int binary_search(int *array, size_t size, int value)
 	size_t iter = 0, iter2 = 0, end = size - 1;
 
 	if (!array)
+	{
 		printf("Found at index: -1");
 		return (-1);
+	}
 	for (iter = 0, end = size - 1; end >= iter;)
 	{
 		printf("Searching in array: ");
